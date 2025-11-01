@@ -1,5 +1,16 @@
 <?php
 
+function view($view, $data = [])
+{
+    $variavel  = "livros";
+    $$variavel = [];
+
+    foreach ($data as $key => $value) {
+        $$key = $value;
+    }
+    require "views/template/app.php";
+}
+
 function dd(...$dump)
 {
 
@@ -9,4 +20,11 @@ function dd(...$dump)
 
     die();
 
+}
+
+function abort($code)
+{
+    http_response_code($code);
+    view($code);
+    die();
 }

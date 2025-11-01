@@ -12,8 +12,4 @@ $titulo    = $livro['titulo'];
 $autor     = $livro['autor'];
 $descricao = $livro['descricao'];
 
-echo "JEREMIAS";
-
-$view = 'livro';
-
-require "views/template/app.php";
+view("livro", compact('livro'));
