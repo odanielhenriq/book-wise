@@ -4,13 +4,13 @@
         <div class="flex">
             <div class="w-1/3">imagem</div>
             <div class="space-y-1">
-                <a href="/livro.php?id=<?php echo $livro['id']?>" class="font-semibold hover:underline"><?php echo $livro['titulo']?></a>
-                <div class="text-xs italic"><?php echo $livro['autor']?></div>
+                <a href="/livro?id=<?php echo $livro['id'] ?>" class="font-semibold hover:underline"><?php echo $livro['titulo'] ?></a>
+                <div class="text-xs italic"><?php echo $livro['autor'] ?></div>
                 <div class="text-xs italic">⭐⭐⭐(3 Avaliações)</div>
             </div>
         </div>
         <div class="text-sm mt-5">
-            <?php echo $livro['descricao']?>
+            <?php echo $livro['descricao'] ?>
         </div>
     </div>
 
